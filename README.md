@@ -1,61 +1,54 @@
-A# ToDo Market
+# ToDo Market
 
-Aplicativo para criar várias listas para serem usadas simultaneamente e sincronizadas na nuvem após os dados serem salvos localmente (**Offline-first**).
+Application to create several lists to be used simultaneously and synchronized in the cloud after the data is saved locally (**Offline-first**).
 
 ![image](app.png)
 
-# 1. Funcionalidades
+# 1. Features
 
-1. Autenticação o mais simples possível.
-2. Cadastrar várias listas diferentes.
-3. Marcar e desmarcar itens reposicionando os desmarcados.
-4. Sincronizar dados na nuvem.
-5. Edição de usuário autenticado.
-6. Configuração de dispositivo.
+1. Simplest authentication possible.
+2. Register several different lists.
+3. Check and uncheck items by repositioning the unchecked ones.
+4. Sync data in the cloud.
+5. Editing authenticated user.
+6. Device Configuration.
 
-## 1.1 Autenticação o mais simples possível
+## 1.1 Authentication as simple as possible
 
-A autenticação é necessária para efetuar a sincronização e deve ser opcional, ou seja, solicitada quando o usuário executar manualmente a sincronização.
-A aplicação deve dar suporte a Autenticação “sem-senha” (**Passwordless**) enviando o token por email para fazer o acesso. 
+Authentication is required to perform the synchronization and must be optional, that is, requested when the user manually performs the synchronization.
+The application must support Authentication “without password” (**Passwordless**) sending the token by email to access it.
 
-## 1.2 Cadastrar várias listas diferentes.
+## 1.2 Register several different lists.
 
-O usuário poderá criar um número limitado de listas de compras, mostrando as informações totais da lista como: Nome da Lista, valor R$(se houver) e status em forma de card.
+The user will be able to create a limited number of shopping lists, showing the total information of the list such as: Name of the List, R$ value (if any) and status in the form of a card.
 
-Os status da lista devem ser: Pendente, Concluída, Desativadas.
+List statuses should be: Pending, Completed, Disabled.
 
-O usuário poderá filtrar as listas por status.
+The user will be able to filter the lists by status.
 
-## 1.3 Marcar e desmarcar itens reposicionando os desmarcados.
+## 1.3 Mark and unmark items by repositioning unmarked ones.
 
-Cada lista precisará dividir os itens marcado dos desmarcados e dando a opção ao usuário reposicionar os itens desmarcados.
+Each list will need to split the checked items from the unchecked items and give the user the option to reposition the unchecked items.
 
-## 1.4 Sincronizar dados na nuvem.
+## 1.4 Synchronize data in the cloud.
 
-Todas as listas e seus dados serão guardados localmente no dispositivo do usuário, sendo sincronizados posteriormente na nuvem. A sincronização deve ser automática e as tentativas de sincronização em caso de falha devem ser feito em um espaçamento de minutos. Esse último ponto é importante para economizar bateria em dispositivos móveis.
+All lists and their data will be stored locally on the user's device, being later synchronized in the cloud. Synchronization must be automatic and attempts to synchronize in case of failure must be done within minutes. This last point is important to save battery life on mobile devices.
 
-## 1.5 Edição de usuário autenticado.
+## 1.5 Authenticated user editing.
 
-Caso autenticado, o usuário deveria ter a possibilidade de alterar informações como Nome, Sobrenome e imagem de perfil.
+If authenticated, the user should be able to change information such as First Name, Last Name and profile picture.
 
-## 1.6 Configuração de dispositivo.
+## 1.6 Device Configuration.
 
-O app deverá ter opções de controle de tema e remoção de cache.
+The app should have theme control and cache removal options.
 
+# 2. User Experience
 
-# 2. Experiência do Usuário
+Every interface will be made using pre-built Material Design 3 components.
+Mockup, font and assets information are available on Figma.
 
-Toda interface será feita usando componentes pré-construidos do Material Design 3.
-Informações de mockup, fonte e assets estão disponíveis no Figma.
+[Figma Link](https://www.figma.com/file/xSoyauWGMb25dsQCBrhPa5/Listinha?node-id=53095%3A27267&t=9eobg3NOs476wXmo-1)
 
-[Link do Figma](https://www.figma.com/file/xSoyauWGMb25dsQCBrhPa5/Listinha?node-id=53095%3A27267&t=9eobg3NOs476wXmo-1)
+# 3. Architecture
 
-
-# 3. Arquitetura
-
-[Geral](ARCHITECTURE.md)
-
-
-# 4. Vídeos
-
-[#1. Iniciando os projetos](https://youtu.be/Y9QwJewv50w)
+[General](ARCHITECTURE.md)
