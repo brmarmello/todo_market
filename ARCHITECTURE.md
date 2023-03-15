@@ -20,14 +20,6 @@ Points to consider before introducing a new feature:
 - It is not allowed to have a concrete class as a dependency of a layer. Cohesion will only be accepted with abstract classes or interfaces. With the exception of the Store.
 - Each layer should have only one responsibility.
 
-# Entities
-
-(Will be created by Intermediate 1 Masterclass students)
-
-# Use cases
-
-(Will be created by Intermediate 1 Masterclass students)
-
 # Design Patterns
 
 - Repository Pattern: For external API access.
